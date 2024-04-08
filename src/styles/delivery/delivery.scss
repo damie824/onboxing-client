@@ -1,0 +1,63 @@
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.delivery-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.delivery-map {
+  background-color: wheat;
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+}
+
+.delivery-map-error {
+  svg {
+    width: 100px;
+    height: auto;
+    color: rgb(250, 55, 55);
+  }
+  p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 200;
+  }
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delivery-menu {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: white;
+  position: absolute;
+  top: 60vh;
+  z-index: 2;
+  padding: 0 20px;
+  transition: top 0.3s ease-in;
+}
+
+.delivery-menu-bar-container {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.delivery-menu-bar {
+  width: 30%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: rgb(170, 170, 170);
+  margin: 0 auto;
+}

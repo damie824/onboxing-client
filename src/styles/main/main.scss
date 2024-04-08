@@ -1,0 +1,110 @@
+main {
+  min-height: 100vh;
+  background-color: rgb(236, 236, 236);
+}
+
+.main-header {
+  background-color: #4a7aeb;
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+}
+
+.main-header-topbar {
+  h1 {
+    font-size: 18px;
+  }
+  svg {
+    width: 30px;
+    height: auto;
+  }
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-buttons {
+  margin-bottom: -4px;
+}
+
+.main-header-searchbar {
+  input {
+    &:focus {
+      outline: none;
+    }
+    flex: 1;
+    border: 0;
+    padding: 8px;
+    border-radius: 10px 0 0px 10px;
+  }
+  a {
+    svg {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    border: 0;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+  }
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-highlight {
+  p {
+    font-size: 12px;
+  }
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, rgb(44, 195, 255) 0%, rgb(132, 0, 255) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-categories {
+  h3 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-weight: 200;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.main-recommands {
+  h3 {
+    margin: 0;
+  }
+  background-color: white;
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
