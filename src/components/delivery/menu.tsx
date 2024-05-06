@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import MapInfo from "./menu/mapsInfo";
 
 export default function DeliveryMenu({
   children,
@@ -11,6 +12,7 @@ export default function DeliveryMenu({
 
     if (bar && menu) {
       bar.onmousedown = (e) => {
+        menu.classList.remove("delivery-menu-activated");
         let shift = e.clientY - menu.getBoundingClientRect().top;
 
         menu.style.transition = "none";
@@ -36,6 +38,7 @@ export default function DeliveryMenu({
           document.onmouseup = null;
           if (e.pageY < (window.innerHeight / 10) * 4) {
             menu.style.top = "0";
+            menu.classList.add("delivery-menu-activated");
           } else {
             menu.style.top = "60vh";
           }
@@ -46,10 +49,11 @@ export default function DeliveryMenu({
 
   return (
     <div id="delivery-menu" className="delivery-menu">
+      <MapInfo />
       <div id="delivery-menu-bar" className="delivery-menu-bar-container">
         <div className="delivery-menu-bar"></div>
       </div>
-      {children}
+      <div className="delivery-menu-body">{children}</div>
     </div>
   );
 }

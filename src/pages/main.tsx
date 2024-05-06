@@ -16,13 +16,13 @@ export default function Main() {
           </p>
         </div>
       </a>
-      <a href="/search/groups">
+      <a href="/search?type=groups">
         <div className="main-categories">
           <h3>우리동네 주문자 찾기</h3>
           <p>더욱 싸게, 더욱 빠르게.</p>
         </div>
       </a>
-      <a href="/search/items">
+      <a href="/search?type=items">
         <div className="main-categories">
           <h3>판매 중인 상품 찾기</h3>
           <p>저렴한 가격에 퀄리티 좋은 상품을 만나보세요.</p>

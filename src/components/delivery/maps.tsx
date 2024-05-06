@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Map, useKakaoLoader } from "react-kakao-maps-sdk";
+import { Map, MapMarker, useKakaoLoader } from "react-kakao-maps-sdk";
 
 export default function DeliveryMaps() {
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
   const [loading, error] = useKakaoLoader({
-    appkey: `${process.env.REACT_APP_KAKAO_CLIENT_ID}`, // 발급 받은 APPKEY
+    appkey: `${process.env.REACT_APP_KAKAO_CLIENT_ID}`,
   });
 
   useEffect(() => {
@@ -48,7 +48,18 @@ export default function DeliveryMaps() {
       <Map
         center={{ lat: position.latitude, lng: position.longitude }}
         style={{ width: "100%", height: "100%" }}
-      ></Map>
+      >
+        <MapMarker
+          position={{ lat: position.latitude, lng: position.longitude }}
+          image={{
+            src: "/assets/maps/marker.png",
+            size: {
+              width: 110,
+              height: 110,
+            },
+          }}
+        />
+      </Map>
     </div>
   );
 }

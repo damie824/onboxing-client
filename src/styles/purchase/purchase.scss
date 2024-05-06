@@ -1,0 +1,199 @@
+.purchase-title {
+  h1 {
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: #4a7aeb;
+  border-radius: 0 0 20px 20px;
+}
+
+.purchase-swiper-card-container {
+  max-width: 300px;
+  margin: 80px auto;
+  margin-bottom: 20px;
+}
+
+.purchase-swiper-card {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.purchase-card-new {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  height: 170px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: inherit;
+}
+
+.purchase-card-new-inner {
+  svg {
+    width: 50px;
+    height: auto;
+    margin-bottom: -4px;
+  }
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.055);
+  border-radius: 100%;
+}
+
+.purchase-card {
+  background-color: rgb(40, 151, 255);
+  color: white;
+  height: 170px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.purchase-card-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  user-select: none;
+}
+
+.purchase-card-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.purchase-card-number {
+  p {
+    font-size: 20px;
+  }
+}
+
+.purchase-card-type {
+  img {
+    width: 50px;
+    height: auto;
+  }
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.purchase-card-info-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.purchase-card-info {
+  display: flex;
+}
+
+.purchase-card-info-first {
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 70px;
+  height: 17px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.purchase-card-info-last {
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 40px;
+  height: 17px;
+  border-radius: 5px;
+}
+
+.purchase-card-container {
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.purchase-card-info-title {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.527);
+    margin: 0;
+    font-size: 12px;
+  }
+  width: 180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.purchase-card-button {
+  &:hover {
+    background-color: rgb(54, 118, 255);
+    color: white;
+  }
+  margin-top: 20px;
+  width: 80%;
+  background-color: transparent;
+  border: 1px solid rgb(54, 118, 255);
+  color: rgb(54, 118, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.purchase-card-delete-button {
+  &:hover {
+    background-color: rgb(255, 54, 54);
+  }
+  margin-top: 10px;
+  border: 1px solid rgb(255, 54, 54);
+  color: rgb(255, 54, 54);
+}
+
+.purchase-card-inputs {
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  input {
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-radius: 5px;
+    margin: 5px;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

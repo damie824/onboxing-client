@@ -1,4 +1,10 @@
-export default function MainHeader() {
+import { useState } from "react";
+import { useLocation, useSearchParams } from "react-router-dom";
+
+export default function MainHeader(props: { query?: string }) {
+  const [query, setQuery] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const searchItems = [
     "맨투맨",
     "바지",
@@ -108,11 +114,24 @@ export default function MainHeader() {
           </a>
         </div>
       </div>
-      <div className="main-header-searchbar">
+      <form
+        className="main-header-searchbar"
+        onSubmit={(e) => {
+          e.preventDefault();
+          const newSearchParams = new URLSearchParams(searchParams);
+          newSearchParams.set("query", query);
+          setSearchParams(newSearchParams);
+        }}
+      >
         <input
+          name="query"
           placeholder={`${checkName(searchItems[randomIndex])} 검색해 보세요!`}
+          defaultValue={props.query ? props.query : ""}
+          onChange={(e) => {
+            setQuery(e.target.value);
+          }}
         />
-        <a>
+        <button type="submit">
           <svg
             className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
@@ -129,8 +148,8 @@ export default function MainHeader() {
               d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
             />
           </svg>
-        </a>
-      </div>
+        </button>
+      </form>
     </header>
   );
 }

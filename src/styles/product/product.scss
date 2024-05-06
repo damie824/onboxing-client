@@ -1,0 +1,140 @@
+.product-title {
+  h1 {
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: #4a7aeb;
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.product-thumbnail {
+  margin-top: -20px;
+  z-index: 5;
+  position: relative;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #3468dd;
+}
+
+.product-thumbnail-swipe {
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.product-title-container {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.price-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.205);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  margin-top: 20px;
+  padding: 20px 0;
+}
+
+.product-title-price {
+  p {
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin: 0;
+    margin: 0;
+  }
+  a {
+    svg {
+      width: 25px;
+      margin-left: 3px;
+      margin-bottom: -2px;
+    }
+    margin: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  color: #3468dd;
+}
+
+.product-title-price-old {
+  p {
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin: 0;
+    text-decoration: line-through;
+    margin: 0;
+  }
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  color: rgba(0, 0, 0, 0.164);
+}
+
+.product-purchase-button {
+  button {
+    background-color: #3468dd;
+    color: white;
+    width: 90%;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  padding: 20px 0;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  background-color: inherit;
+}
+
+.product-markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.082);
+  }
+  blockquote {
+    p {
+      margin: 0;
+      margin-top: -2px;
+    }
+    margin: 0;
+    border-left: 2px solid #3468dd;
+    padding: 5px 0;
+    padding-left: 10px;
+  }
+  a {
+    color: #3468dd;
+  }
+  padding: 1px 10px;
+}

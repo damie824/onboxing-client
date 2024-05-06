@@ -1,63 +1,92 @@
-h1 {
-  margin: 0;
-  font-size: 18px;
+.delivery-body {
+  background-color: white;
 }
 
-.delivery-container {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+.delivery-info {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 20px 0;
 }
 
-.delivery-map {
-  background-color: wheat;
-  width: 100%;
-  height: 90vh;
-  z-index: -1;
+.delivery-info-container {
+  background-color: #00000018;
+  margin-bottom: 120px;
 }
 
-.delivery-map-error {
-  svg {
-    width: 100px;
-    height: auto;
-    color: rgb(250, 55, 55);
+.delivery-info-title {
+  h4 {
+    &::after {
+      content: ">";
+      margin-left: 5px;
+      user-select: none;
+      opacity: 40%;
+    }
+    margin: 0;
   }
   p {
     margin: 0;
-    margin-top: 10px;
-    font-size: 12px;
-    font-weight: 200;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.582);
   }
-  background-color: rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.delivery-info-thumbnail {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.315);
+  border-radius: 10px;
+}
+
+.delivery-info-buttons {
+  button {
+    &:last-child {
+      &:hover {
+        background-color: #3468dd;
+        color: white;
+      }
+      border: 1px solid #3468dd;
+      color: #3468dd;
+      margin: 0;
+    }
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  display: flex;
   flex-direction: column;
-}
-
-.delivery-menu {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  background-color: white;
-  position: absolute;
-  top: 60vh;
-  z-index: 2;
   padding: 0 20px;
-  transition: top 0.3s ease-in;
 }
 
-.delivery-menu-bar-container {
-  cursor: pointer;
-  padding: 10px;
-  margin-bottom: 30px;
-}
-
-.delivery-menu-bar {
-  width: 30%;
-  height: 5px;
-  border-radius: 50px;
-  background-color: rgb(170, 170, 170);
-  margin: 0 auto;
+.delivery-title {
+  h1 {
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  background-color: #4a7aeb;
+  border-radius: 0 0 20px 20px;
 }
